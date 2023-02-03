@@ -1,0 +1,10 @@
+FROM continuumio/miniconda
+FROM --platform=linux/amd64 python:3.7
+
+WORKDIR /src
+COPY environment.yml .
+RUN conda env create -f environment.yml
+
+RUN conda activate moler-env
+
+
