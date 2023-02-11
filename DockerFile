@@ -23,6 +23,8 @@ ENV PATH /opt/conda/bin:$PATH
 # setup conda virtual environment
 COPY ./environment.yml ./environment.yml
 
+COPY ./datasets ./datasets
+
 RUN conda env create -f environment.yml --name moler
 
 RUN conda init bash
@@ -34,4 +36,4 @@ ENV CONDA_DEFAULT_ENV $moler
 
 RUN pip install molecule-generation
 
-CMD ["bash"]
+ENTRYPOINT [ "molecule_generation", "preprocess" ]

@@ -7,3 +7,5 @@ __pycache__/
 
 # Model checkpoints:
 *_best.pkl
+
+datasets/*

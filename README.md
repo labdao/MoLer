@@ -5,6 +5,10 @@
 [![pypi](https://img.shields.io/pypi/v/molecule-generation.svg)](https://pypi.org/project/molecule-generation/)
 [![code style](https://img.shields.io/badge/code%20style-black-202020.svg)](https://github.com/ambv/black)
 
+```
+docker run -v /Users/hossamzaki/Projects/molecule-generation:/mydata -it --name moler --rm moler /mydata/datasets/ /mydata/out/ trace/ 
+```
+
 This repository contains training and inference code for the MoLeR model introduced in [Learning to Extend Molecular Scaffolds with Structural Motifs](https://arxiv.org/abs/2103.03864). We also include our implementation of CGVAE, but it currently lacks integration with the high-level model interface, and is provided mostly for reference.
 
 ## Quick start
