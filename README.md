@@ -5,6 +5,7 @@
 [![pypi](https://img.shields.io/pypi/v/molecule-generation.svg)](https://pypi.org/project/molecule-generation/)
 [![code style](https://img.shields.io/badge/code%20style-black-202020.svg)](https://github.com/ambv/black)
 
+How to run
 ```
 docker run -v /Users/hossamzaki/Projects/molecule-generation:/mydata -it --name moler --rm moler /mydata/datasets/ /mydata/out/ trace/ 
 ```
