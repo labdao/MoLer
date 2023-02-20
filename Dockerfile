@@ -36,4 +36,4 @@ ENV CONDA_DEFAULT_ENV $moler
 
 RUN pip install molecule-generation
 
-ENTRYPOINT [ "molecule_generation", "preprocess" ]
+ENTRYPOINT [ "molecule_generation" ]
