@@ -36,4 +36,10 @@ ENV CONDA_DEFAULT_ENV $moler
 
 RUN pip install molecule-generation
 
+# install model checkpoint and format it
+RUN mkdir model_dir
+RUN cd model_dir
+RUN wget https://figshare.com/ndownloader/files/34642724
+RUN mv * GNN_Edge_MLP_MoLeR__2022-02-24_07-16-23_best.pkl
+
 ENTRYPOINT [ "molecule_generation" ]
